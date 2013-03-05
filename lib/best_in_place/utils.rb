@@ -8,7 +8,7 @@ module BestInPlace
       end
 
       id = "best_in_place_#{object_to_key(object)}"
-      id << "_#{object.id}" if object.class.ancestors.include?(ActiveModel::Serializers::JSON)
+      id << "_#{object.id}"
       id << "_#{field}"
       id
     end
